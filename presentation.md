@@ -3,7 +3,7 @@ toplevel-attributes: slip enter=~duration:0 center="~duration:0 start"
 ---
 
 {#start }
-# Planning: de nouveaux outils
+# Planning bénévole: de nouveaux outils
 
 {pause up="start"}
 
@@ -33,42 +33,50 @@ Il est facile de trouver une solution... Mais très difficile de trouver la meil
 {pause}
 🤖 Les problèmes de planning sont aussi très adaptés aux solutions automatiques: il est possible de les traduire en formules logiques pour lesquelles il existe de nombreux solveurs.
 
-{pause up="~margin:45"}
+{pause up="~margin:40"}
 ## Deux outils en cours de développement par des membres de l'AFJ
 
 - Un outil polyvalent de gestion des conventions: **Juggling Convention par Pierre**
 - Un outil spécialisé dans la génération de planning: **Toubénev par Ulysse et Émile**
 
-{pause up="~margin:45"}
-### Juggling Convention [https://juggling-convention.com](https://juggling-convention.com)
+{pause slip up="~margin:40"}
+---
+### Juggling Convention [https://juggling-convention.com](https://juggling-convention.com){target=_blank}
 Un site internet offrant une interface combinée pour gérer de nombreux aspect d'une convention, en amont et pendant l'évènement:
 
 ![](jc_admin.png){width=100%}
 
-{#this pause up="~margin:45"}
+{#this pause up="~margin:40"}
 Et une chouette interface pour faire la promo et donner les infos:
 
 ![](jc_promo.png){width=100%}
 
-{#this pause up="~margin:45"}
+{#this pause up="~margin:40"}
 Juggling Convention propose également un outil de génération automatique de planning:
 
 ![](jc_planning.png){width=100%}
 
 {pause} Un très bon moyen de faire un premier jet !
 
-{pause}
-Mais l'algorithme glouton
-utilisé par Juggling Convention ne permet pas d'atteindre une solution optimale.
+{pause center="mais"}
+---
+
+{#mais .block}
+Mais l'algorithme "glouton"
+utilisé ne permet pas d'atteindre une solution optimale.
 
 
-{pause up="~margin:45"}
+{pause slip up="~margin:40"}
+---
 ### Toubénev
 
 - Un projet initié au sein des Bras Croisés pour Aurillac 2024: 90 bénévoles, 420 créneaux à remplir, de quoi donner la migraine 🤯
 
 {pause}
-- L'idée: traduire les contraintes sous forme de formules logiques et utiliser un solveur-optimiseur existant. Ces outils, tels que Z3 ou CP-Sat sont très performants pour trouver des solutions à des problèmes compliqués.
+- L'objectif: un outil capable de sortir un planning utilisable sans modifications ultèrieures.
+
+{pause}
+- La technique: traduire les contraintes sous forme de formules logiques et utiliser un solveur-optimiseur existant. Ces outils, tels que Z3 ou CP-Sat sont très performants pour trouver des solutions à des problèmes compliqués.
 
 {pause center}
 - Exemples de contraintes et préférences prises en charge:
@@ -90,9 +98,37 @@ utilisé par Juggling Convention ne permet pas d'atteindre une solution optimale
 {pause center .block}
 L'outil va proposer des solutions respectant toutes les contraintes jusqu'à en trouver une qui soit optimale, ou s'arrêter au bout d'un temps donné.
 
-{pause}
-Au contraire de Juggling Convention, il n'y a pas encore d'interface aboutie pour utiliser cet outil. Ulysse et Emile accompagnent les conventions qui souhaitent l'utiliser au cas par cas.
+Pour un petit évènement, tel que Super Brassac, la convergence vers une solution optimale est quasiment instantanée.
 
-{pause center .block}
-N'hésitez pas à en faire la demande, c'est en expérimentant sur un maximum d'évènements que l'on pourra aboutir à l'outil le plus utile possible !
+{pause center}
+L'entrée des données se fait actuellement via une [feuille](https://docs.google.com/spreadsheets/d/1VkJOyRG-ajtmhvy5klsw7VHxNVBuH415ORll_ytWlXw/edit?usp=sharing){target=_blank} Google Sheet (ou Notion)
+
+![](gsheet.png){width=100%}
+![](gsheet2quetes.png){width=100%}
+
+{pause up="~margin:40"}
+Et le planning et exporté sous différents formats (ical, csv) ainsi qu'un [petit site](https://team-afj.github.io/toubenev/#user=all){target=_blank} encore très expérimental :
+
+![](planning.png){width=100%}
+
+{pause center}
+Au contraire de Juggling Convention, il n'y a pas encore d'interface utilisateur aboutie pour utiliser cet outil. Ulysse et/ou Emile accompagnent les organisateurs qui souhaitent l'utiliser au cas par cas.
+
+{pause .block}
+N'hésitez pas à en faire la demande, l'outil est déjà apte à simplifier grandement l'établissement du planning, et c'est en l'utilisant que l'on pourra le bonifier !
+
+{pause up="~margin:150 conclusion"}
+---
+<div style="height:250px"></div>
+
+{#conclusion}
+## Conclusion
+
+- Au moins, 2025 aura été une bonne année pour les outils d'aide à l'organisation de conventions... 😅
+
+{pause}
+- N'hésitez pas à nous contacter pour toute questions sur ces outils, et à en tirer parti, c'est comme ça qu'ils s'amélioreront !
+
+{pause}
+- Idéalement, ces deux outils, aujourd'hui indépendants, pourront interopérer dans le futur...
 
