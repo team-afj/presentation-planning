@@ -1,5 +1,6 @@
 ---
 toplevel-attributes: slip enter=~duration:0 center="~duration:0 start"
+css: main.css
 ---
 
 {#start }
