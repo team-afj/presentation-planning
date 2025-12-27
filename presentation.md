@@ -20,9 +20,9 @@ css: main.css
   - etc.
 {pause}
 - Et toutes les solutions correctes ne se valent pas:
-  - Respect des préférences individuelles d'horaire et de type de tâche.
+  - Respect des préférences individuelles d'horaires et de types de tâches.
   - Équilibre des temps de travail.
-  - Permettre tout le monde d'assister à un maximum de spectacles.
+  - Permettre à tout le monde d'assister à un maximum de spectacles.
   - etc.
 
 {.block pause center}
@@ -108,21 +108,26 @@ L'entrée des données se fait actuellement via une [feuille](https://docs.googl
 ![](gsheet2quetes.png){width=100%}
 
 {pause up="~margin:40"}
-Et le planning et exporté sous différents formats (ical, csv) ainsi qu'un [petit site](https://team-afj.github.io/toubenev/#user=all){target=_blank} encore très expérimental :
+Et le planning est exporté dans différents formats (ical, csv) ainsi qu'un [petit site](https://team-afj.github.io/toubenev/#user=all){target=_blank} encore très expérimental&nbsp;:
 
-![](planning.png){width=100%}
+![](planning.png){width=95%}
 
 {pause center}
-Au contraire de Juggling Convention, il n'y a pas encore d'interface utilisateur aboutie pour utiliser cet outil. Ulysse et/ou Emile accompagnent les organisateurs qui souhaitent l'utiliser au cas par cas.
+Au contraire de Juggling Convention, il n'y a pas encore d'interface utilisateur aboutie pour utiliser cet outil. Ulysse et Emile accompagnent les organisateurs qui souhaitent l'utiliser au cas par cas.
 
 {pause .block}
 N'hésitez pas à en faire la demande, l'outil est déjà apte à simplifier grandement l'établissement du planning, et c'est en l'utilisant que l'on pourra le bonifier !
 
-{pause up="~margin:150 conclusion"}
+{pause center="suite"}
 ---
+{#suite .block}
+Ainsi ces deux outils sont complémentaires: Juggling Convention
+permet la gestion de la plupart des aspects d'une convention tandis que Toubénev
+se spécialise dans la génération de planning optimaux prenant en compte de nombreuses contraintes.
+
 <div style="height:250px"></div>
 
-{#conclusion}
+{pause up="~margin:150"}
 ## Conclusion
 
 - Au moins, 2025 aura été une bonne année pour les outils d'aide à l'organisation de conventions... 😅
@@ -131,5 +136,8 @@ N'hésitez pas à en faire la demande, l'outil est déjà apte à simplifier gra
 - N'hésitez pas à nous contacter pour toute questions sur ces outils, et à en tirer parti, c'est comme ça qu'ils s'amélioreront !
 
 {pause}
-- Idéalement, ces deux outils, aujourd'hui indépendants, pourront interopérer dans le futur...
+- Idéalement, ces deux outils, aujourd'hui indépendants, pourront interopérer et se compléter dans le futur...
 
+{pause}
+<div style="height:150px"></div>
+🍌
